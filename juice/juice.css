@@ -1,0 +1,338 @@
+.ui-textfield {
+    font: inherit;
+    color: inherit;
+    background: #FFFFFF;
+    text-align: inherit;
+    outline: none;
+    cursor: text;
+}
+
+#flavorList fieldset {
+    border: 0;
+    font-size: 0.8em;
+}
+
+.ui-selectmenu-menu {
+    font-size: 0.8em;
+}
+
+.ui-menu-item.ui-state-focus {
+    border: 1px solid orange;
+    background: orange url("back.jpg") 50% 50% repeat-x;
+}
+
+#juiceList {
+    position: relative;
+    width: 258px;
+    padding: 0 0 0 10px;
+    right: 10px;
+    overflow: hidden;
+}
+
+#flavorList label {
+    display: block;
+    margin: 30px 0 0 0;
+    color: #E57B25;
+}
+
+#flavorList select {
+    width: 200px;
+    margin: 0 0 20px 0;
+}
+
+#juiceList h1 {
+    width: 236px;
+    border-bottom: solid 2px #E57B25;
+    font-size: 1.3em;
+    margin: 0 0 10px 0;
+    padding: 0 0 2px 0;
+}
+
+#juiceList ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: #E57B25;
+    list-style-type: none;
+}
+
+#juiceList ul li span {
+    display: inline-block;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 0 5px 15px;
+}
+
+#juiceList ul li span:hover {
+    color: #E57B25;
+}
+
+#juiceList ul li {
+    width: 256px;
+    margin: 10px 0 0 0;
+    position: relative;
+    left: 0;
+    border-radius: 5px 0 0 5px;
+    background-color: transparent;
+}
+
+#juiceList ul li.juiceSelected {
+    display: block;
+    width: 250px;
+    border-radius: 5px 0 0 5px;
+    background-color: #5F5D5D;
+    border: 1px solid #E57B25;
+    border-right:  1px solid #5F5D5D;
+    position: relative;
+    left: 56px;
+    transition: left 500ms ease, width 500ms ease;
+    -webkit-transition: left 500ms ease, width 500ms ease;
+    -moz-transition: left 500ms ease, width 500ms ease;
+    -o-transition: left 500ms ease, width 500ms ease;
+}
+
+#juiceList ul li.juiceSelected.runEffectHidden {
+    border-radius: 5px;
+    border-right: 1px solid #E57B25;
+    transition: left 0ms ease, width 0ms ease;
+    -webkit-transition: left 0ms ease, width 0ms ease;
+    -moz-transition: left 0ms ease, width 0ms ease;
+    -o-transition: left 0ms ease, width 0ms ease;
+}
+
+#searchError {
+    text-align: center;
+    font-size: 1em;
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+    color: #FFFFFF;
+}
+
+.scrollable .scroll-bar.vertical {
+    position: absolute;
+    height: 100%;
+    left: 8px;
+    background-color: #5F5D5D;
+    border-radius: 3px;
+}
+
+.scrollable.default-skin .scroll-bar .thumb {
+    background-color: #E57B25;
+    opacity: 1.0;
+}
+
+.viewport {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+}
+
+.overview {
+    width: 238px;
+    padding: 0 12px 0 20px;
+}
+
+#mobileBackButton {
+    display: none;
+}
+
+#main img {
+    max-width: 30%;
+    min-width: 200px;
+    border: solid 2px #E57B25;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+}
+
+#full img {
+    max-width: 20%;
+    min-width: 200px;
+    border: solid 2px #E57B25;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+}
+
+#main p, #full p {
+    display: block;
+    width: 40%;
+    min-width: 200px;
+    float: left;
+    margin: 10px;
+}
+
+#full #accordion h2, .juicy h2 {
+    font-family: "Under Authority";
+    color: #000000;
+    font-size: 1.75em;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    text-shadow:
+    -1px -1px 0 #3D3B3B,
+     1px -1px 0 #3D3B3B,
+    -1px  1px 0 #3D3B3B,
+     1px  1px 0 #3D3B3B;
+}
+
+#full #accordion h2 span, .juicy h2 span {
+    display: inline-block;
+    position: relative;
+    font-family: "Under Authority";
+    padding-left: 0.05em;
+    color: #000000;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: -2px;
+    text-shadow:
+    -1px -1px 0 #3D3B3B,
+     1px -1px 0 #3D3B3B,
+    -1px  1px 0 #3D3B3B,
+     1px  1px 0 #3D3B3B;
+}
+
+#full #accordion h2 span::after, .juicy h2 span::after {
+    position: absolute;
+    left: 1px;
+    z-index: 2;
+    content: "Id";
+    font-family: "Under Authority";
+    color: #000000;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-shadow: none;
+}
+
+.juicy h2 {
+    display: inline-block;
+    font-size: 2em;
+    width: 30%;
+    min-width: 5.5em;
+    padding: 0.125em;
+}
+
+@media only screen and (max-width: 750px) {
+/* adjustment for smaller desktop/tablet screens */
+    #juiceList {
+        width: 223px;
+    }
+
+    #juiceList h1 {
+        width: 203px;
+    }
+
+    #juiceList ul li.juiceSelected {
+        left: 26px;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+/* for smaller tablets and all the way down to phones */
+    #flavorList label {
+        margin-top: 0;
+    }
+
+    fieldset section {
+        display: block;
+        margin: 0 10px 10px 10px;
+    }
+
+    #juiceList {
+        width: 100%;
+    }
+
+    #juiceList h1 {
+        width: 100%;
+    }
+
+    #juiceList ul li.juiceSelected {
+        display: inline-block;
+        left: 26px;
+        width: auto;
+        border-radius: 5px;
+        border-right: 1px solid #E57B25;
+    }
+
+    #main {
+        position: fixed;
+        width: 95%;
+        top: 10px;
+        right: -100%;
+        border-radius: 20px 0 0 20px;
+        border-top: solid 2px #E57B25;
+        border-bottom: solid 2px #E57B25;
+        border-left: solid 2px #E57B25;
+        z-index: 100;
+        padding: 5px 20px 20px 20px;
+        padding-top: 5px;
+        transition: right 500ms ease;
+        -webkit-transition: right 500ms ease;
+        -moz-transition: right 500ms ease;
+        -o-transition: right 500ms ease;
+    }
+
+    #main.slideover {
+        right: -10px;
+        transition: right 500ms ease;
+        -webkit-transition: right 500ms ease;
+        -moz-transition: right 500ms ease;
+        -o-transition: right 500ms ease;
+    }
+
+    #juiceList ul li span {
+        padding: 5px 15px 5px 15px;
+    }
+
+    aside {
+        border-bottom: solid 2px #E57B25;
+        margin-bottom: 10px;
+    }
+
+    #mobileBackButton {
+        display: block;
+        background-color: #3D3B3B;
+        border: solid 2px #E57B25;
+        border-radius: 5px;
+        cursor: pointer;
+        float: right;
+        font-family: Live Wired;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.7em;
+        line-height: 0.7em;
+        height: 1em;
+        width:  1em;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        color: #FFFFFF;
+        text-shadow:
+        -1px -1px 0 #E57B25,
+         1px -1px 0 #E57B25,
+        -1px  1px 0 #E57B25,
+         1px  1px 0 #E57B25,
+
+        -2px -2px 0 #3D3B3B,
+         2px -2px 0 #3D3B3B,
+        -2px  2px 0 #3D3B3B,
+         2px  2px 0 #3D3B3B,
+
+        -2px -1px 0 #3D3B3B,
+         2px -1px 0 #3D3B3B,
+        -2px  1px 0 #3D3B3B,
+         2px  1px 0 #3D3B3B,
+
+        -1px -2px 0 #3D3B3B,
+         1px -2px 0 #3D3B3B,
+        -1px  2px 0 #3D3B3B,
+         1px  2px 0 #3D3B3B;
+    }
+
+}
