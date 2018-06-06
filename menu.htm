@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<!--
+   Tennessee Vapor Factory
+   Juice
+
+   Author: WebMasterZen - Nick R. Richmond
+-->
+
+<title>TN Vapor Factory - Juice</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="icons/favicon.ico" type="image/x-icon"/>
+<link rel="alternate" href="http://example.com/en" hreflang="en" />
+
+<meta name="description" content="Tennessee Vapor Factory is Knoxville's newest vapor store and lounge. We have a wide selection of juices and mods to meet your personal taste. Located in the Baron's Place shopping plaza on Kingston Pike across from Mazda Knoxville.  Whether you are a new vaper or an experienced user, you need to stop by, hang out, and check out what's up.  Vape on, Knoxville!"/>
+<meta name="keywords" content="tennessee, vapor, factory, vape, e-cigarette, ecigarette, electronic, e-cig, ecig, vintage vapors, vvk, vapor boss, knoxville vapors, mountain oak, mov, john nolan, john, country, brew, fawg phule, vapor fi, sapphire, knoxville, vapor beast, vapro, vaper, cigarette, cig, juice, mods, vaping, kingston pike, tn, e-juice, ejuice, clouds, cloud comp, cloud competition, tank, drip, tip, drip tip,vape shop, saffire, cassa, tsfa, vapor store, kv, vapor pro, kanger, innokin, aspire, knoxville, vapor trails, Baron's Place, baron, place, off the wall, rothchild's, rothchild, rothchilds, tobecco, tobacco, apocalpyse, modz, tn"/>
+<meta name="author" content="webmasterzen"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="google-site-verification" content="5TvQaU4fOkCt5--SGAQDRfI_fKEeAMIVliLz1iT9n08" />
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+  function initialize() {
+    var position = new google.maps.LatLng(35.917135, -84.0753871);
+    var myOptions = {
+      zoom: 15,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map"),
+        myOptions);
+
+    var companyLogo = new google.maps.MarkerImage('icons/maplogo.png',
+	new google.maps.Size(50,57),
+	new google.maps.Point(0,0),
+	new google.maps.Point(25,57)
+    );
+
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        icon: companyLogo,
+        title:"Tennessee Vapor Factory"
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+
+  }
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="juice/juice.css" />
+<script src="juice/juice.js" type="text/javascript"></script>
+<script src="juice/mobile.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<a id="top"></a>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Knoxville, TN",
+    "postalCode": "37923",
+    "streetAddress": "8817 Kingston Pike #107"
+  },
+  "email": [
+    "tennesseevaporfactory(at)gmail.com",
+    "staff(at)tennesseevaporfactory.com" ]
+  "url" : "http://tennesseevaporfactory.com",
+  "logo" : "http://tennesseevaporfactory.com/images/tvf_square.png",
+  "contactPoint" : [{
+    "@type" : "ContactPoint",
+    "telephone" : "+1-865-281-3407",
+    "contactType" : "customer support"
+  }]
+}
+</script>
+
+<div id="content">
+
+<header>
+    <img src="images/logo_back_piece.png" alt="Logo for Tennessee Vapor Factory" id="logo" />
+    <img src="images/gear1.png" class="logo_gear1" />
+    <img src="images/gear2.png" class="logo_gear2" />
+    <img src="images/gear3.png" class="logo_gear3" />
+    <img src="images/gear4.png" class="logo_gear4" />
+    <img src="images/logo_front_piece.png" alt="Logo for Tennessee Vapor Factory" id="logoF" />
+</header>
+
+<nav id="topNav">
+    <script type="text/javascript">
+        $("#topNav").load("data/nav.htm #top");
+    </script>
+</nav>
+
+<aside>
+<section id="flavorList">
+    <fieldset>
+
+        <section><label for="flavor_choice">Select a Catagory</label>
+        <select name="flavor_choice" id="flavor">
+            <option value="all" selected>All Flavors</option>
+            <optgroup>
+                <option value="fruit">All Fruit</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="blueberry">Blueberry</option>
+                <option value="peach">Peach</option>
+            </optgroup>
+            <option value="dessert">Dessert</option>
+            <option value="tobacco">Tobacco</option>
+            <option value="custard">Custard</option>
+            <option value="cereal">Cereal</option>
+            <option value="candy">Candy</option>
+            <option value="coffee">Coffee</option>
+            <option value="drinks">Alcoholic Beverages</option>
+        </select></section>
+        <section><label for="search">Custom Search for Flavor</label>
+        <input type="text" name="search" id="searchBox"></section>
+    </fieldset>
+
+    <div id="searchError"></div>
+
+    <section id="juiceList">
+
+    <h1>Tennessee Vapor Factory</h1><ul>
+        <!-- House Line -->
+        <!-- <li class="juiceSelected" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory menthol">
+            <span>Crank</span></li> -->
+        <li class="fruit raspberry juiceSelected" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory raspberry berry limeade">
+            <span>Amperage</span></li>
+        <li class="fruit apple" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit cranberry apple">
+            <span>Grinder</span></li>
+        <li class="candy" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cinnamon red hot hots candy">
+            <span>Molten</span></li>
+        <li class="fruit strawberry peach banana" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit strawberry straw peach banana berry cream">
+            <span>Radius</span></li>
+        <li class="fruit strawberry peach" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit strawberry straw berry peach">
+            <span>Revolution</span></li>
+        <li class="menthol" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory peppermint mint menthol">
+            <span>Sub Zero</span></li>
+        <li class="cereal" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cereal fruit_loops">
+            <span>Spectrum</span></li>
+        <li class="candy" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory jolly_rancher candy candies">
+            <span>Smelter</span></li>
+        <li class="fruit mango" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cantaloupe mango papaya tropical tropic fruit">
+            <span>Ultraviolet</span></li>
+        <li class="fruit" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory tropical tropic fruit punch juice">
+            <span>Voltage</span></li>
+        <li class="fruit strawberry custard dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit berry straw strawberry dessert custard">
+            <span>Catalyst</span></li>
+        <li class="fruit dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory key lime pie dessert pastry">
+            <span>Reactor</span></li>
+        <li class="fruit dessert apple" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit dessert apple cinnamon roll pastry">
+            <span>Actuator</span></li>
+        <li class="fruit dessert cherry" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit dessert cherry cheese cheesecake cake pie pastry">
+            <span>Alloy</span></li>
+        <li class="fruit apple dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cinnamon apple cheese cake cheesecake fruit dessert pastry pie">
+            <span>Apex</span></li>
+        <li class="fruit dessert apple" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory apple cinnamon danish vanilla pastry dessert fruit icing">
+            <span>Arc</span></li>
+        <li class="fruit peach raspberry" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit peach raspberry">
+            <span>Axis</span></li>
+        <li class="fruit dessert blueberry" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit blue berry blueberry dessert snack yogurt">
+            <span>Blueprint</span></li>
+        <li class="fruit blueberry dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory blue berry blueberry donut dessert icing fruit">
+            <span>Breaker</span></li>
+        <li class="fruit blueberry strawberry watermelon" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit berry straw blue strawberry blueberry water melon watermelon koolada">
+            <span>Chiller</span></li>
+        <li class="drinks fruit raspberry" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory raspberry champagne alcohol berry">
+            <span>Circuit</span></li>
+        <li class="fruit blueberry dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit blue berry blueberry danish dessert pastry">
+            <span>Cobalt</span></li>
+        <li class="butterscotch caramel dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory butterscotch caramel dessert danish pastry">
+            <span>Contour</span></li>
+        <li class="dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cinnamon sugar cookie dessert icing">
+            <span>Conveyor</span></li>
+        <li class="candy dessert mint" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory peppermint patty candy chocolate mint cocoa">
+            <span>Cooler</span></li>
+        <li class="dessert butterscotch" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory butterscotch graham cracker vanilla brown sugar">
+            <span>Copper</span></li>
+        <li class="fruit strawberry banana custard" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit banana straw berry strawberry custard">
+            <span>Diffuser</span></li>
+        <li class="dessert caramel" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory caramel smores chocolate cocoa marshmallow marshmellow marshmallo marshmello graham cracker">
+            <span>Emulsion</span></li>
+        <li class="dessert fruit" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory dessert fruit lemon chesse cake cheesecake pie">
+            <span>Energized</span></li>
+        <li class="candy fruit strawberry watermelon" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory candy straw berry strawberry water melon watermelon gummy">
+            <span>Forge</span></li>
+        <li class="dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory vanilla dessert cheese cake cheesecake pie">
+            <span>Frequency</span></li>
+        <li class="fruit strawberry dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit dessert straw berry strawberry shortcake short cake">
+            <span>Fusion</span></li>
+        <li class="fruit" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cantaloupe mango papaya fruit tropical">
+            <span>Gauge</span></li>
+        <li class="apple fruit dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cinnamon apple sugar cookie dessert pastry">
+            <span>Generator</span></li>
+        <li class="dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory brown sugar graham cracker vanilla">
+            <span>Idler</span></li>
+        <li class="fruit strawberry banana" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit strawberry straw berry banana dragon dragonfruit tropical">
+            <span>Infrared</span></li>
+        <li class="fruit dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit lemon dessert sugar cookie pastry">
+            <span>Link</span></li>
+        <li class="fruit" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit peach yogurt">
+            <span>Parallel</span></li>
+        <li class="dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cinnamon sugar cookie pecan nuts">
+            <span>Piston</span></li>
+        <li class="fruit peach dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit peach cobbler dessert">
+            <span>Pitch</span></li>
+        <li class="dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory smores chocolate cocoa marshmallow marshmellow marshmallo marshmello graham cracker">
+            <span>Spindle</span></li>
+        <li class="dessert" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory cinnamon sugar cookie graham cracker">
+            <span>Sprocket</span></li>
+        <li class="caramel apple fruit" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory caramel apple fruit cream dessert">
+            <span>Titanium</span></li>
+        <li class="fruit" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory pink lemonade lemon">
+            <span>Variable</span></li>
+        <li class="fruit" data-maker="tennessee_vapor_factory"
+            data-juice-line="house"
+            data-keywords="tvf tennessee vapor factory fruit cherry lime limeade">
+            <span>Wattage</span></li>
+    </ul>
+
+    <h1>Fawg Phule</h1><ul>
+        <!-- Main Line -->
+        <li class="fruit strawberry" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruit straw berry strawberry lemon lemonade">
+            <span>Arabella</span></li>
+        <li class="cereal" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule cereal berry crunch">
+            <span>Black Jacks</span></li>
+        <li class="custard" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule boob boobs tit tits milk vanilla custard">
+            <span>Boo B-Milk</span></li>
+        <li class="fruit strawberry" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule straw berry strawberry kiwi">
+            <span>Bug Juice</span></li>
+        <li class="fruit strawberry" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule straw berry strawberry milk">
+            <span>Byberry</span></li>
+        <li class="fruit strawberry custard" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule straw berry strawberry custard">
+            <span>Conquest</span></li>
+        <li class="dessert" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule sugar funnel cake dessert pastry snack">
+            <span>Dough Boy</span></li>
+        <li class="fruit" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruit tropical dragon melon">
+            <span>Dragon Fruit Bliss</span></li>
+        <li class="vanilla menthol" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule vanilla menthol">
+            <span>Dream Catcher</span></li>
+        <li class="dessert" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule frosting vanilla cupcake dessert snack pastry">
+            <span>Excalibur</span></li>
+        <li class="candy" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule straw berry strawberry cotton candy">
+            <span>Fairy Floss</span></li>
+        <li class="" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule honey nut nuts">
+            <span>Honey Milk</span></li>
+        <li class="apple" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule apple butter">
+            <span>Journey</span></li>
+        <li class="candy" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule watermelon melon candy">
+            <span>La Sandia</span></li>
+        <li class="fruit raspberry" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruit melon raspberry berry">
+            <span>Melon Mashup</span></li>
+        <li class="fruit strawberry banana" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule straw berry strawberry banana cream">
+            <span>Nanaberry</span></li>
+        <li class="candy" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule apple candy">
+            <span>Nixie</span></li>
+        <li class="" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule peanut butter">
+            <span>Nucking Futz</span></li>
+        <li class="fruit strawberry custard" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule straw berry strawberry custard">
+            <span>Original Sin</span></li>
+        <li class="fruit blueberry dessert" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule dessert fruit blue berry blueberry muffin pastry">
+            <span>Past Time</span></li>
+        <li class="fruit peach" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruit peach cream">
+            <span>Peaches & Scream</span></li>
+        <li class="candy" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule pineapple candy">
+            <span>Pineapple Krush</span></li>
+        <li class="fruit raspberry dessert" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruit dessert raspberry cheese cake cheesecake pie">
+            <span>Razzelberry</span></li>
+        <li class="fruit strawberry" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule straw berry strawberry fruit cream">
+            <span>Rhiannon</span></li>
+        <li class="dessert" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule dessert pastry icing cinnamon roll bun biscuit">
+            <span>Sin-A-Bun</span></li>
+        <li class="fruit dessert" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule black berry blackberry cobbler fruit dessert pastry">
+            <span>The Cobbler</span></li>
+        <li class="fruit strawberry" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule straw berry strawberry fruit delight">
+            <span>The Saint</span></li>
+        <li class="candy" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule candy blue raspberry berry cotton">
+            <span>Toxicity</span></li>
+        <li class="fruit blueberry custard" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruit blue berry blueberry custard">
+            <span>True Blue</span></li>
+        <li class="cereal dessert" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruity pebbles cheese cake cheesecake pie cereal dessert pastry">
+            <span>Unicorn Pie</span></li>
+        <li class="dessert" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule cream kreme twinkie dessert snack cake">
+            <span>Unicorn Snax</span></li>
+        <li class="cereal" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule cereal fruit_loops">
+            <span>Unicorn Treats</span></li>
+        <li class="cereal" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule lucky charms cereal marshmallow marshmellow marshmallo marshmello">
+            <span>Unlucky</span></li>
+        <li class="fruit strawberry" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruit straw berry strawberry mango">
+            <span>Venom</span></li>
+        <li class="fruit strawberry" data-maker="fawg_phule"
+            data-juice-line="fawg"
+            data-keywords="fp fawg phule fruit straw berry strawberry">
+            <span>Wild Strawberry</span></li>
+    </ul>
+
+    <h1>Hard Knox E-Liquids</h1><ul>
+        <!-- Main Line -->
+        <li class="fruit strawberry peach" data-maker="hard_knox"
+            data-juice-line="main"
+            data-keywords="hard knox fruit straw strawberry berry peach">
+            <span>Peach & Strawberry</span></li>
+        <li class="fruit strawberry banana" data-maker="hard_knox"
+            data-juice-line="main"
+            data-keywords="hard knox straw strawberry berry banana">
+            <span>Strawberry & Banana</span></li>
+        <li class="dessert fruit blueberry" data-maker="hard_knox"
+            data-juice-line="main"
+            data-keywords="hard knox blue blueberry berry pastry dessert cheese cake pie cheesecake">
+            <span>Blueberry Cheese Cake</span></li>
+    </ul>
+
+    <h1>Mountain Oak Vapors</h1><ul>
+        <!-- Dark Temptations -->
+        <li class="candy" data-maker="mountain_oak_vapors"
+            data-juice-line="dark_temptations"
+            data-keywords="mov candy candies fire fiery hot cinnamon">
+            <span>Blister</span></li>
+        <li class="coffee" data-maker="mountain_oak_vapors"
+            data-juice-line="dark_temptations"
+            data-keywords="mov coffee cappuccino caramel chocolate vanilla">
+            <span>Caramel Movaccino</span></li>
+        <li class="candy dessert" data-maker="mountain_oak_vapors"
+            data-juice-line="dark_temptations"
+            data-keywords="mov candy candies dessert chocolate graham cracker caramel coconut">
+            <span>Heavenly 7</span></li>
+        <li class="coffee" data-maker="mountain_oak_vapors"
+            data-juice-line="dark_temptations"
+            data-keywords="mov coffee cream">
+            <span>Coffee & Cream</span></li>
+        <!-- Enthusiast Series -->
+        <li class="dessert" data-maker="mountain_oak_vapors"
+            data-juice-line="enthusiast"
+            data-keywords="mov dessert bread banana nut">
+            <span>Legendary</span></li>
+        <li class="" data-maker="mountain_oak_vapors"
+            data-juice-line="enthusiast"
+            data-keywords="mov vanilla">
+            <span>Vanilla Dream</span></li>
+        <li class="strawberry fruit" data-maker="mountain_oak_vapors"
+            data-juice-line="enthusiast"
+            data-keywords="mov fruit straw berry strawberry">
+            <span>Strawberry Breeze</span></li>
+        <li class="fruit" data-maker="mountain_oak_vapors"
+            data-juice-line="enthusiast"
+            data-keywords="mov fruit water melon watermelon">
+            <span>Water Malone</span></li>
+        <li class="tobacco" data-maker="mountain_oak_vapors"
+            data-juice-line="enthusiast"
+            data-keywords="mov tobacco">
+            <span>Rangler</span></li>
+        <li class="dessert" data-maker="mountain_oak_vapors"
+            data-juice-line="enthusiast"
+            data-keywords="mov dessert fruit sorbet sherbet ice_cream">
+            <span>Rainbow Sorbet</span></li>
+        <li class="fruit peach" data-maker="mountain_oak_vapors"
+            data-juice-line="enthusiast"
+            data-keywords="mov fruit peach pineapple tropical">
+            <span>Caribbean Crush</span></li>
+        <!-- Sweetwater Valley -->
+        <li class="blueberry" data-maker="mountain_oak_vapors"
+            data-juice-line="sweetwater_valley"
+            data-keywords="mov blue blueberry berry lemonade">
+            <span>Blue Drop</span></li>
+        <li class="raspberry" data-maker="mountain_oak_vapors"
+            data-juice-line="sweetwater_valley"
+            data-keywords="mov raspberry berry limeade">
+            <span>Red Drop</span></li>
+        <li class="peach fruit" data-maker="mountain_oak_vapors"
+            data-juice-line="sweetwater_valley"
+            data-keywords="mov peach lychee fruit">
+            <span>Shangri-La</span></li>
+        <li class="blueberry strawberry menthol" data-maker="mountain_oak_vapors"
+            data-juice-line="sweetwater_valley"
+            data-keywords="mov straw blue strawberry blueberry berry menthol">
+            <span>Cool Berry</span></li>
+        <li class="fruit" data-maker="mountain_oak_vapors"
+            data-juice-line="sweetwater_valley"
+            data-keywords="mov watermelon melon water wintergreen winter green">
+            <span>Happy Farmer</span></li>
+        <li class="drinks" data-maker="mountain_oak_vapors"
+            data-juice-line="sweetwater_valley"
+            data-keywords="mov pina colada">
+            <span>Tropical Sunrise</span></li>
+        <!-- Tennessee Tobacco -->
+        <li class="tobacco" data-maker="mountain_oak_vapors"
+            data-juice-line="tennessee_tobacco"
+            data-keywords="mov tobacco">
+            <span>Full Virginia Flake RY4</span></li>
+        <li class="tobacco coffee" data-maker="mountain_oak_vapors"
+            data-juice-line="tennessee_tobacco"
+            data-keywords="mov tobacco coffee espresso">
+            <span>Americano</span></li>
+        <li class="tobacco blueberry" data-maker="mountain_oak_vapors"
+            data-juice-line="tennessee_tobacco"
+            data-keywords="mov tobacco blueberry berry">
+            <span>Blue Ridge</span></li>
+        <li class="" data-maker="mountain_oak_vapors"
+            data-juice-line="tennessee_tobacco"
+            data-keywords="mov menthol">
+            <span>Cool Ice</span></li>
+        <li class="tobacco" data-maker="mountain_oak_vapors"
+            data-juice-line="tennessee_tobacco"
+            data-keywords="mov tobacco pipe">
+            <span>Apache</span></li>
+        <li class="tobacco" data-maker="mountain_oak_vapors"
+            data-juice-line="tennessee_tobacco"
+            data-keywords="mov tobacco pipe">
+            <span>Southern Gentleman</span></li>
+        <li class="tobacco" data-maker="mountain_oak_vapors"
+            data-juice-line="tennessee_tobacco"
+            data-keywords="mov tobacco menthol">
+            <span>Frostbite</span></li>
+        <!-- Vape Diva -->
+        <li class="fruit strawberry drinks" data-maker="mountain_oak_vapors"
+            data-juice-line="vape_diva"
+            data-keywords="mov mint strawberry mojito mixed_drinks alcohol booze">
+            <span>Mojit-ohh</span></li>
+        <li class="fruit blueberry drinks" data-maker="mountain_oak_vapors"
+            data-juice-line="vape_diva"
+            data-keywords="mov fruit blueberry sangria mixed_drinks alcohol booze">
+            <span>Cabana</span></li>
+        <li class="fruit peach drinks" data-maker="mountain_oak_vapors"
+            data-juice-line="vape_diva"
+            data-keywords="mov peach champagne mixed_drinks alcohol booze">
+            <span>Bellini</span></li>
+        <li class="fruit drinks" data-maker="mountain_oak_vapors"
+            data-juice-line="vape_diva"
+            data-keywords="mov martini pomegranate acai mixed_drinks alcohol booze">
+            <span>Pomtini</span></li>
+    </ul>
+</section>
+
+<script type="text/javascript">
+
+    $(function() {
+        $("#flavor")
+            .selectmenu()
+            .selectmenu( "menuWidget" )
+
+        $("#searchBox").button()
+            .addClass('ui-textfield')
+            .off('mouseenter').off('mousedown').off('keydown');
+    });
+
+</script>
+
+</aside>
+
+<div id="main">
+    <script type="text/javascript">
+        $("#main").load("juice/tennessee_vapor_factory/house/amperage.htm");
+    </script>
+</div><!-- end #main -->
+
+<script type="text/javascript">
+	$().ready(function() {
+		var $scrollingDiv = $("#main");
+
+		$(window).scroll(function(){
+
+            var header_height = $("header").outerHeight();
+            var nav_height = $("#topNav").outerHeight();
+            var scroll_adjust = header_height + nav_height + 2;
+
+            if ($(window).scrollTop() > scroll_adjust) {
+                if ($("#main").css("z-index") != 100 ) {
+                    var x = scroll_adjust;
+                    $scrollingDiv
+				    .stop()
+				    .animate({"paddingTop": ($(window).scrollTop()-x+10) + "px"}, 0 );
+                }
+            } else {
+                if ($("#main").css("z-index") != 100 ) {
+                    var x = $(window).scrollTop();
+                    $scrollingDiv
+				    .stop()
+				    .animate({"paddingTop": ($(window).scrollTop()-x+10) + "px"}, 0 );
+                }
+            }
+		});
+	});
+
+    $(window).resize(function() {
+        if ($("#main").css("z-index") == 100 ) {
+            $("#main").css({"paddingTop": 5});
+        }
+    });
+</script>
+
+<footer>
+<nav id="footerNav">
+    <script type="text/javascript">
+        $("#footerNav").load("data/nav.htm #bottom");
+    </script>
+</nav>
+<section id="juiceFooter">
+    <p>Site design and maintenance by: Nicholas R. Richmond - WebMasterZen</p>
+    <p>Last updated:  <!--%DateStamp%-->8/18/2016<!----></p>
+</section>
+</footer>
+
+</div><!-- end #content -->
+
+<script type="text/javascript">
+
+    $(function() {
+        $("#flavor")
+            .selectmenu()
+            .selectmenu( "menuWidget" )
+
+        $("#searchBox").button()
+            .addClass('ui-textfield')
+            .off('mouseenter').off('mousedown').off('keydown');
+    });
+
+</script>
+
+</body>
+
+</html>

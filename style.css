@@ -1,0 +1,1777 @@
+@font-face {
+    font-family: 'Live Wired';
+    src: url('fonts/livewiredital.ttf') format('truetype'),
+         url('fonts/livewiredital-webfont.woff') format('woff'),
+         url('fonts/livewiredital-webfont.woff2') format('woff2'),
+         url('fonts/livewiredital-webfont.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Bernard';
+    src: url('fonts/bernard.ttf') format('truetype'),
+         url('fonts/bernard-webfont.woff') format('woff'),
+         url('fonts/bernard-webfont.woff2') format('woff2'),
+         url('fonts/bernard-webfont.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Under Authority';
+    src: url('fonts/under_authority.ttf') format('truetype'),
+         url('fonts/under_authority.woff') format('woff'),
+         url('fonts/under_authority.woff2') format('woff2'),
+         url('fonts/under_authority.eot') format('embedded-opentype');
+}
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #AAAAAA;
+}
+
+#content {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #5F5D5D;
+    border: 2px solid #E57B25;
+    border-radius: 100px 20px 20px 20px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #3D3B3B;
+    border-radius: 100px 20px 0 0;
+}
+
+header img {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -12px;
+    height: 200px;
+    width: 222px;
+    outline: none;
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.logo_gear1 {
+    position: absolute;
+    height: 50px;
+    width:  50px;
+    top: 126px;
+    left: 108px;
+    z-index: 2;
+    -webkit-animation:spin 7.26s linear infinite;
+       -moz-animation:spin 7.26s linear infinite;
+            animation:spin 7.26s linear infinite;
+    -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+}
+
+.logo_gear2 {
+    position: absolute;
+    height: 88px;
+    width:  88px;
+    top: 79px;
+    left: 20px;
+    z-index: 2;
+    -webkit-animation:spin 16.420243s linear infinite;
+       -moz-animation:spin 16.420243s linear infinite;
+            animation:spin 16.420243s linear infinite;
+    -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+}
+
+.logo_gear3 {
+    position: absolute;
+    height: 78px;
+    width:  78px;
+    z-index: 2;
+    top: 49px;
+    left: 99px;
+    -webkit-animation:spin 14.54s linear infinite;
+       -moz-animation:spin 14.54s linear infinite;
+            animation:spin 14.54s linear infinite;
+}
+
+.logo_gear4 {
+    position: absolute;
+    height: 50px;
+    width:  50px;
+    z-index: 2;
+    top: 31px;
+    left: 60px;
+    -webkit-animation:spin 9.98s linear infinite;
+       -moz-animation:spin 9.98s linear infinite;
+            animation:spin 9.98s linear infinite;
+    -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+}
+
+#logoF {
+    position: absolute;
+    z-index: 3;
+    height: 200px;
+    width:  222px;
+}
+
+.logo_gear5 {
+    position: absolute;
+    height: 250px;
+    width:  250px;
+    z-index: 1;
+    top: -25px;
+    left: -25px;
+    -webkit-animation:spin 15s linear infinite;
+       -moz-animation:spin 15s linear infinite;
+            animation:spin 15s linear infinite;
+}
+
+.logo_gear6 {
+    position: absolute;
+    height: 250px;
+    width:  250px;
+    z-index: -1;
+    top: 86px;
+    left: -237px;
+    -webkit-animation:spin 15s linear infinite;
+       -moz-animation:spin 15s linear infinite;
+            animation:spin 15s linear infinite;
+    -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+}
+
+#topNav {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    background-color: #3D3B3B;
+}
+
+#topNav ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+    margin:  0;
+    background: transparent;
+}
+
+#topNav li {
+    display: inline-block;
+    margin:  0;
+    padding: 0;
+}
+
+#topNav a:link, #topNav a:visited {
+    display: block;
+    margin: 0;
+    padding: 0 15px;
+    height: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow:
+        -1px -1px 0 #5F5D5D,
+         1px -1px 0 #5F5D5D,
+        -1px  1px 0 #5F5D5D,
+         1px  1px 0 #5F5D5D;
+}
+
+#topNav a:hover {
+    color: #E57B25;
+}
+
+aside {
+    display: block;
+    float: left;
+    width: 258px;
+    padding: 20px 10px 10px 10px;
+    border-right: 2px solid #E57B25;
+    border-bottom: 2px solid #E57B25;
+    background-color: #3D3B3B;
+    border-bottom-right-radius: 20px;
+}
+
+aside.right {
+    float: left;
+    width: 258px;
+    padding: 20px 10px 10px 10px;
+    border-left: 2px solid #E57B25;
+    border-bottom: 2px solid #E57B25;
+    background-color: #3D3B3B;
+    border-bottom-left-radius: 20px;
+    border-right: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+#contactInfo {
+    text-align: center;
+}
+
+#contactInfo ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+#contactInfo li {
+    display: block;
+    background-color: #5F5D5D;
+    margin:  5px 0 0 0;
+    padding: 0 0.3em;
+    border-radius: 10px;
+}
+
+#contactInfo li:hover {
+    background-color: #E57B25;
+}
+
+#contactInfo a:link, #contactInfo a:visited {
+    display: block;
+    padding: 0 0 0 3em;
+    height: 2.5em;
+    font-size: 1em;
+    line-height: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#contactInfo a:hover {
+    color: #FFFFFF;
+}
+
+#contactInfo #phone {
+    background-image: url(icons/phone1_white.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+}
+
+#contactInfo #email {
+    background-image: url(icons/email_white.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+}
+
+#contactInfo #directions {
+    background-image: url(icons/map_white.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+}
+
+#contactInfo #facebook {
+    background-image: url(icons/facebook.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+}
+
+#contactInfo #twitter {
+    background-image: url(icons/twitter.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+}
+
+#contactInfo #googleplus {
+    background-image: url(icons/googleplus.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+}
+
+#contactInfo #instagram {
+    background-image: url(icons/instagram.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+}
+
+#main {
+    float: left;
+    width: calc(100% - 258px);
+    padding: 10px;
+    background-color: #5F5D5D;
+    border-top: 2px solid #E57B25;
+}
+
+#full {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+    background-color: #5F5D5D;
+}
+
+#full.punt {
+    border-top: 2px solid #E57B25;
+    border-bottom: 2px solid #E57B25;
+}
+
+#full.fourOfour, #full.main {
+    border-top: 2px solid #E57B25;
+}
+
+span.headergroup {
+    display: block;
+    background-image: url(images/headergear.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left center;
+    min-height: 4.2em;
+    padding: 1em 0 1em 2.5em;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 2.7em;
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1em;
+    text-shadow:
+    -1px -1px 0 #E57B25,
+     1px -1px 0 #E57B25,
+    -1px  1px 0 #E57B25,
+     1px  1px 0 #E57B25,
+
+    -2px -2px 0 #3D3B3B,
+     2px -2px 0 #3D3B3B,
+    -2px  2px 0 #3D3B3B,
+     2px  2px 0 #3D3B3B,
+
+    -2px -1px 0 #3D3B3B,
+     2px -1px 0 #3D3B3B,
+    -2px  1px 0 #3D3B3B,
+     2px  1px 0 #3D3B3B,
+
+    -1px -2px 0 #3D3B3B,
+     1px -2px 0 #3D3B3B,
+    -1px  2px 0 #3D3B3B,
+     1px  2px 0 #3D3B3B;
+}
+
+h2 {
+    color: #E57B25;
+    font-size: 1.3em;
+    line-height: 1em;
+    font-family: Bernard;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow:
+    -1px -1px 0 #3D3B3B,
+     1px -1px 0 #3D3B3B,
+    -1px  1px 0 #3D3B3B,
+     1px  1px 0 #3D3B3B;
+}
+
+h2 span {
+    color: #FFFFFF;
+    font-size: 1.7em;
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    text-shadow:
+    -1px -1px 0 #E57B25,
+     1px -1px 0 #E57B25,
+    -1px  1px 0 #E57B25,
+     1px  1px 0 #E57B25,
+
+    -2px -2px 0 #3D3B3B,
+     2px -2px 0 #3D3B3B,
+    -2px  2px 0 #3D3B3B,
+     2px  2px 0 #3D3B3B,
+
+    -2px -1px 0 #3D3B3B,
+     2px -1px 0 #3D3B3B,
+    -2px  1px 0 #3D3B3B,
+     2px  1px 0 #3D3B3B,
+
+    -1px -2px 0 #3D3B3B,
+     1px -2px 0 #3D3B3B,
+    -1px  2px 0 #3D3B3B,
+     1px  2px 0 #3D3B3B;
+}
+
+h2 span span { font-size: 1px; }
+
+h2 #gooddarnjuice {
+    display: inline-block;
+    padding-left: 1.5em;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    -webkit-transform:scaleX(1.5);
+    -moz-transform:scaleX(1.5);
+    -ms-transform:scaleX(1.5);
+    -o-transform:scaleX(1.5);
+    transform:scaleX(1.5);
+    color: #E57B25;
+    font-size: 1em;
+    line-height: 1em;
+    font-family: Bernard;
+    font-weight: normal;
+    font-style: normal;
+    text-shadow:
+    -1px -1px 0 #3D3B3B,
+     1px -1px 0 #3D3B3B,
+    -1px  1px 0 #3D3B3B,
+     1px  1px 0 #3D3B3B,
+    -1px -2px 0 #3D3B3B,
+     1px -2px 0 #3D3B3B,
+    -1px  2px 0 #3D3B3B,
+     1px  2px 0 #3D3B3B,
+    -2px -1px 0 #3D3B3B,
+     2px -1px 0 #3D3B3B,
+    -2px  1px 0 #3D3B3B,
+     2px  1px 0 #3D3B3B;
+}
+
+#gooddarnjuice::after {
+    display: none;
+}
+
+#main.juicy #gooddarnjuice {
+    font-size: 0.75em;
+}
+
+#main.juicy span.headergroup h2 {
+    line-height: 0.75em;
+    padding: 0;
+    margin-top: -0.25em;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-size: 1.3em;
+    line-height: 1em;
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow:
+    -1px -1px 0 #B3B3B3,
+     1px -1px 0 #B3B3B3,
+    -1px  1px 0 #B3B3B3,
+     1px  1px 0 #B3B3B3;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-family: arial,sans-serif;
+}
+
+a:link, a:visited {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-family: arial,sans-serif;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #E57B25;
+    font-size: 1em;
+    font-family: arial,sans-serif;
+    text-decoration: underline;
+}
+
+p span, #VOK {
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    text-shadow:
+    -1px -1px 0 #E57B25,
+     1px -1px 0 #E57B25,
+    -1px  1px 0 #E57B25,
+     1px  1px 0 #E57B25,
+
+    -2px -2px 0 #3D3B3B,
+     2px -2px 0 #3D3B3B,
+    -2px  2px 0 #3D3B3B,
+     2px  2px 0 #3D3B3B,
+
+    -2px -1px 0 #3D3B3B,
+     2px -1px 0 #3D3B3B,
+    -2px  1px 0 #3D3B3B,
+     2px  1px 0 #3D3B3B,
+
+    -1px -2px 0 #3D3B3B,
+     1px -2px 0 #3D3B3B,
+    -1px  2px 0 #3D3B3B,
+     1px  2px 0 #3D3B3B;
+}
+
+table.hours {
+    border: none;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-family: arial,sans-serif;
+    text-align: right;
+    margin: 0 0 10px 0;
+}
+
+table.hours th {
+    text-align: left;
+}
+
+table.hours td {
+    width: 1em;
+}
+
+table.hours td.day {
+    width: 3em;
+}
+
+table.hours td.time {
+    width: 4.5em;
+}
+
+#map, #access {
+    display: inline-block;
+    width:  47%;
+    margin: 0 5px;
+    border: 2px solid #e57b25;
+    border-radius: 10px;
+}
+
+#map {
+    height: 300px;
+    min-width: 200px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #3D3B3B;
+    border-radius: 0 0 20px 20px;
+}
+
+#footerNav {
+    width: 100%;
+    border-bottom: 2px solid #E57B25;
+    background-color: #5F5D5D;
+    text-align: center;
+    color: #E57B25;
+    padding: 5px 0 5px 0;
+}
+
+#footerNav p {
+   color: #E57B25;
+}
+
+#footerNav a:link, #footerNav a:visited {
+    color: #FFFFFF
+}
+
+#footerNav a:hover {
+    color: #E57B25;
+}
+
+footer section {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer section p {
+    color: #B3B3B3;
+}
+
+.schema {
+    width: 80%;
+    font-size: 0.75em;
+    margin: 0 auto;
+    color: #B3B3B3;
+
+    display: none;
+}
+
+.schema a, .schema a div {
+    display: inline;
+    width: auto;
+}
+
+#footerNav p.fda {
+    padding: 5px 10%;
+    border-top: 2px solid #E57B25;
+    background: #FFFFFF;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: -5px;
+
+    display: none;
+}
+
+.tablet, .mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media only screen and (max-width: 750px) {
+/* adjustment for smaller desktop/tablet screens */
+    span.headergroup {
+        padding: 1em 0 1em 0;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    aside, aside.right {
+        width: 223px;
+    }
+
+    #main {
+        width: calc(100% - 223px);
+    }
+
+    .mobile, .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+/* juicy page breakpoint */
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+/* for smaller tablets */
+    aside {
+        width: 100%;
+        border-radius: 0;
+        border: 0;
+    }
+
+    #contactInfo li {
+        width: 47%;
+        float: left;
+        margin:  5px 3% 0 0;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    #map, #access {
+        width: 90%;
+    }
+
+    .desktop, .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+/* for even smaller tablets possibly large phones */
+    #contactInfo li {
+        width: 100%;
+        float: none;
+    }
+
+    #map {
+        height: 200px;
+    }
+
+    aside {
+        padding-top: 0;
+    }
+
+    .tablet, .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+/* for phones */
+    #content {
+        border-radius: 50px 20px 20px 20px;
+    }
+
+    header img, #logo, #logoF {
+        height: 100px;
+        width:  111px;
+        left: -6px;
+    }
+
+    .logo_gear1 {
+        height: 25px;
+        width:  25px;
+        top: 63px;
+        left: 54px;
+    }
+
+    .logo_gear2 {
+        height: 44px;
+        width:  44px;
+        top: 39.5px;
+        left: 10px;
+    }
+
+    .logo_gear3 {
+        height: 39px;
+        width:  39px;
+        top: 24.5px;
+        left: 49.5px;
+    }
+
+    .logo_gear4 {
+        height: 25px;
+        width:  25px;
+        top: 15.5px;
+        left: 30px;
+    }
+
+    header {
+        height: 100px;
+        border-radius: 50px 20px 0 0;
+    }
+
+    .tablet, .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+/* for phones in landscape */
+    #content {
+        border-radius: 50px 20px 20px 20px;
+    }
+
+    header img, #logo, #logoF {
+        height: 100px;
+        width:  111px;
+        left: -6px;
+    }
+
+    .logo_gear1 {
+        height: 25px;
+        width:  25px;
+        top: 63px;
+        left: 54px;
+    }
+
+    .logo_gear2 {
+        height: 44px;
+        width:  44px;
+        top: 39.5px;
+        left: 10px;
+    }
+
+    .logo_gear3 {
+        height: 39px;
+        width:  39px;
+        top: 24.5px;
+        left: 49.5px;
+    }
+
+    .logo_gear4 {
+        height: 25px;
+        width:  25px;
+        top: 15.5px;
+        left: 30px;
+    }
+
+    header {
+        height: 100px;
+        border-radius: 50px 20px 0 0;
+    }
+
+    #map {
+        width: 90%;
+    }
+
+    .tablet, .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+}
+
+#full h2.actuator, #main h2.actuator, #full #accordion h2.actuator {
+    text-shadow:
+        -1px -1px #697302,
+        -1px  1px #697302,
+         1px -1px #697302,
+         1px  1px #697302;
+}
+
+#full h2.actuator:hover, #main h2.actuator:hover, #full #accordion h2.actuator:hover, #main h2.actuator.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #697302,
+        -1px  1px #697302,
+         1px -1px #697302,
+         1px  1px #697302;
+}
+
+#full h2.alloy, #main h2.alloy, #full #accordion h2.alloy {
+    text-shadow:
+        -1px -1px #ff0018,
+        -1px  1px #ff0018,
+         1px -1px #ff0018,
+         1px  1px #ff0018;
+}
+
+#full h2.alloy:hover, #main h2.alloy:hover, #full #accordion h2.alloy:hover, #main h2.alloy.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ff0018,
+        -1px  1px #ff0018,
+         1px -1px #ff0018,
+         1px  1px #ff0018;
+}
+
+#full h2.amperage, #main h2.amperage, #full #accordion h2.amperage {
+    text-shadow:
+        -1px -1px #f56d0a,
+        -1px  1px #f56d0a,
+         1px -1px #f56d0a,
+         1px  1px #f56d0a;
+}
+
+#full h2.amperage:hover, #main h2.amperage:hover, #full #accordion h2.amperage:hover, #main h2.amperage.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #f56d0a,
+        -1px  1px #f56d0a,
+         1px -1px #f56d0a,
+         1px  1px #f56d0a;
+}
+
+#full h2.arc, #main h2.arc, #full #accordion h2.arc {
+    text-shadow:
+        -1px -1px #6c00ff,
+        -1px  1px #6c00ff,
+         1px -1px #6c00ff,
+         1px  1px #6c00ff;
+}
+
+#full h2.arc:hover, #main h2.arc:hover, #full #accordion h2.arc:hover, #main h2.arc.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #6c00ff,
+        -1px  1px #6c00ff,
+         1px -1px #6c00ff,
+         1px  1px #6c00ff;
+}
+
+#full h2.axis, #main h2.axis, #full #accordion h2.axis {
+    text-shadow:
+        -1px -1px #a10f17,
+        -1px  1px #a10f17,
+         1px -1px #a10f17,
+         1px  1px #a10f17;
+}
+
+#full h2.axis:hover, #main h2.axis:hover, #full #accordion h2.axis:hover, #main h2.axis.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #a10f17,
+        -1px  1px #a10f17,
+         1px -1px #a10f17,
+         1px  1px #a10f17;
+}
+
+#full h2.blueprint, #main h2.blueprint, #full #accordion h2.blueprint {
+    text-shadow:
+        -1px -1px #233ae9,
+        -1px  1px #233ae9,
+         1px -1px #233ae9,
+         1px  1px #233ae9;
+}
+
+#full h2.blueprint:hover, #main h2.blueprint:hover, #full #accordion h2.blueprint:hover, #main h2.blueprint.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #233ae9,
+        -1px  1px #233ae9,
+         1px -1px #233ae9,
+         1px  1px #233ae9;
+}
+
+#full h2.catalyst, #main h2.catalyst, #full #accordion h2.catalyst, #full h2.fusion, #main h2.fusion, #full #accordion h2.fusion {
+    text-shadow:
+        -1px -1px #ff0030,
+        -1px  1px #ff0030,
+         1px -1px #ff0030,
+         1px  1px #ff0030;
+}
+
+#full h2.catalyst:hover, #main h2.catalyst:hover, #full #accordion h2.catalyst:hover, #full h2.fusion:hover, #main h2.fusion:hover, #full #accordion h2.fusion:hover, #main h2.catalyst.click, #main h2.fusion.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ff0030,
+        -1px  1px #ff0030,
+         1px -1px #ff0030,
+         1px  1px #ff0030;
+}
+
+#full h2.chiller, #main h2.chiller, #full #accordion h2.chiller {
+    text-shadow:
+        -1px -1px #00b9aa,
+        -1px  1px #00b9aa,
+         1px -1px #00b9aa,
+         1px  1px #00b9aa;
+}
+
+#full h2.chiller:hover, #main h2.chiller:hover, #full #accordion h2.chiller:hover, #main h2.chiller.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #00b9aa,
+        -1px  1px #00b9aa,
+         1px -1px #00b9aa,
+         1px  1px #00b9aa;
+}
+
+#full h2.circuit, #main h2.circuit, #full #accordion h2.circuit {
+    text-shadow:
+        -1px -1px #e30e42,
+        -1px  1px #e30e42,
+         1px -1px #e30e42,
+         1px  1px #e30e42;
+}
+
+#full h2.circuit:hover, #main h2.circuit:hover, #full #accordion h2.circuit:hover, #main h2.circuit.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #e30e42,
+        -1px  1px #e30e42,
+         1px -1px #e30e42,
+         1px  1px #e30e42;
+}
+
+#full h2.cobalt, #main h2.cobalt, #full #accordion h2.cobalt {
+    text-shadow:
+        -1px -1px #4975a4,
+        -1px  1px #4975a4,
+         1px -1px #4975a4,
+         1px  1px #4975a4;
+}
+
+#full h2.cobalt:hover, #main h2.cobalt:hover, #full #accordion h2.cobalt:hover, #main h2.cobalt.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #4975a4,
+        -1px  1px #4975a4,
+         1px -1px #4975a4,
+         1px  1px #4975a4;
+}
+
+#full h2.cooler, #main h2.cooler, #full #accordion h2.cooler {
+    text-shadow:
+        -1px -1px #7af76d,
+        -1px  1px #7af76d,
+         1px -1px #7af76d,
+         1px  1px #7af76d;
+}
+
+#full h2.cooler:hover, #main h2.cooler:hover, #full #accordion h2.cooler:hover, #main h2.cooler.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #7af76d,
+        -1px  1px #7af76d,
+         1px -1px #7af76d,
+         1px  1px #7af76d;
+}
+
+#full h2.crank, #main h2.crank, #full #accordion h2.crank {
+    text-shadow:
+        -1px -1px #8ec23f,
+        -1px  1px #8ec23f,
+         1px -1px #8ec23f,
+         1px  1px #8ec23f;
+}
+
+#full h2.crank:hover, #main h2.crank:hover, #full #accordion h2.crank:hover, #main h2.crank.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #8ec23f,
+        -1px  1px #8ec23f,
+         1px -1px #8ec23f,
+         1px  1px #8ec23f;
+}
+
+#full h2.emulsion, #main h2.emulsion, #full #accordion h2.emulsion {
+    text-shadow:
+        -1px -1px #ad1701,
+        -1px  1px #ad1701,
+         1px -1px #ad1701,
+         1px  1px #ad1701;
+}
+
+#full h2.emulsion:hover, #main h2.emulsion:hover, #full #accordion h2.emulsion:hover, #main h2.emulsion.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ad1701,
+        -1px  1px #ad1701,
+         1px -1px #ad1701,
+         1px  1px #ad1701;
+}
+
+#full h2.energized, #main h2.energized, #full #accordion h2.energized {
+    text-shadow:
+        -1px -1px #9e6524,
+        -1px  1px #9e6524,
+         1px -1px #9e6524,
+         1px  1px #9e6524;
+}
+
+#full h2.energized:hover, #main h2.energized:hover, #full #accordion h2.energized:hover, #main h2.energized.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #9e6524,
+        -1px  1px #9e6524,
+         1px -1px #9e6524,
+         1px  1px #9e6524;
+}
+
+#full h2.forge, #main h2.forge, #full #accordion h2.forge {
+    text-shadow:
+        -1px -1px #ac885f,
+        -1px  1px #ac885f,
+         1px -1px #ac885f,
+         1px  1px #ac885f;
+}
+
+#full h2.forge:hover, #main h2.forge:hover, #full #accordion h2.forge:hover, #main h2.forge.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ac885f,
+        -1px  1px #ac885f,
+         1px -1px #ac885f,
+         1px  1px #ac885f;
+}
+
+#full h2.generator, #main h2.generator, #full #accordion h2.generator {
+    text-shadow:
+        -1px -1px #ffc709,
+        -1px  1px #ffc709,
+         1px -1px #ffc709,
+         1px  1px #ffc709;
+}
+
+#full h2.generator:hover, #main h2.generator:hover, #full #accordion h2.generator:hover, #main h2.generator.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ffc709,
+        -1px  1px #ffc709,
+         1px -1px #ffc709,
+         1px  1px #ffc709;
+}
+
+#full h2.grinder, #main h2.grinder, #full #accordion h2.grinder {
+    text-shadow:
+        -1px -1px #0af525,
+        -1px  1px #0af525,
+         1px -1px #0af525,
+         1px  1px #0af525;
+}
+
+#full h2.grinder:hover, #main h2.grinder:hover, #full #accordion h2.grinder:hover, #main h2.grinder.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #0af525,
+        -1px  1px #0af525,
+         1px -1px #0af525,
+         1px  1px #0af525;
+}
+
+#full h2.idler, #main h2.idler, #full #accordion h2.idler, #full h2.idler span, #main h2.idler span, #full #accordion h2.idler span {
+    text-shadow:
+        -1px -1px #879905,
+        -1px  1px #879905,
+         1px -1px #879905,
+         1px  1px #879905;
+}
+
+#full h2.idler:hover, #main h2.idler:hover, #full #accordion h2.idler:hover, #main h2.idler.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #879905,
+        -1px  1px #879905,
+         1px -1px #879905,
+         1px  1px #879905;
+}
+
+#full h2.ignition, #main h2.ignition, #full #accordion h2.ignition {
+    text-shadow:
+        -1px -1px #ff5a00,
+        -1px  1px #ff5a00,
+         1px -1px #ff5a00,
+         1px  1px #ff5a00;
+}
+
+#full h2.ignition:hover, #main h2.ignition:hover, #full #accordion h2.ignition:hover, #main h2.ignition.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ff5a00,
+        -1px  1px #ff5a00,
+         1px -1px #ff5a00,
+         1px  1px #ff5a00;
+}
+
+#full h2.infrared, #main h2.infrared, #full #accordion h2.infrared {
+    text-shadow:
+        -1px -1px #d42626,
+        -1px  1px #d42626,
+         1px -1px #d42626,
+         1px  1px #d42626;
+}
+
+#full h2.infrared:hover, #main h2.infrared:hover, #full #accordion h2.infrared:hover, #main h2.infrared.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #d42626,
+        -1px  1px #d42626,
+         1px -1px #d42626,
+         1px  1px #d42626;
+}
+
+#full h2.link, #main h2.link, #full #accordion h2.link {
+    text-shadow:
+        -1px -1px #fdff47,
+        -1px  1px #fdff47,
+         1px -1px #fdff47,
+         1px  1px #fdff47;
+}
+
+#full h2.link:hover, #main h2.link:hover, #full #accordion h2.link:hover, #main h2.link.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #fdff47,
+        -1px  1px #fdff47,
+         1px -1px #fdff47,
+         1px  1px #fdff47;
+}
+
+#full h2.molten, #main h2.molten, #full #accordion h2.molten {
+    text-shadow:
+        -1px -1px #bed967,
+        -1px  1px #bed967,
+         1px -1px #bed967,
+         1px  1px #bed967;
+}
+
+#full h2.molten:hover, #main h2.molten:hover, #full #accordion h2.molten:hover, #main h2.molten.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #bed967,
+        -1px  1px #bed967,
+         1px -1px #bed967,
+         1px  1px #bed967;
+}
+
+#full h2.parallel, #main h2.parallel, #full #accordion h2.parallel {
+    text-shadow:
+        -1px -1px #4eaf4c,
+        -1px  1px #4eaf4c,
+         1px -1px #4eaf4c,
+         1px  1px #4eaf4c;
+}
+
+#full h2.parallel:hover, #main h2.parallel:hover, #full #accordion h2.parallel:hover, #main h2.parallel.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #4eaf4c,
+        -1px  1px #4eaf4c,
+         1px -1px #4eaf4c,
+         1px  1px #4eaf4c;
+}
+
+#full h2.piston, #main h2.piston, #full #accordion h2.piston {
+    text-shadow:
+        -1px -1px #f15d22,
+        -1px  1px #f15d22,
+         1px -1px #f15d22,
+         1px  1px #f15d22;
+}
+
+#full h2.piston:hover, #main h2.piston:hover, #full #accordion h2.piston:hover, #main h2.piston.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #f15d22,
+        -1px  1px #f15d22,
+         1px -1px #f15d22,
+         1px  1px #f15d22;
+}
+
+#full h2.radius, #main h2.radius, #full #accordion h2.radius {
+    text-shadow:
+        -1px -1px #e1fb02,
+        -1px  1px #e1fb02,
+         1px -1px #e1fb02,
+         1px  1px #e1fb02;
+}
+
+#full h2.radius:hover, #main h2.radius:hover, #full #accordion h2.radius:hover, #main h2.radius.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #e1fb02,
+        -1px  1px #e1fb02,
+         1px -1px #e1fb02,
+         1px  1px #e1fb02;
+}
+
+#full h2.reactor, #main h2.reactor, #full #accordion h2.reactor {
+    text-shadow:
+        -1px -1px #66ff00,
+        -1px  1px #66ff00,
+         1px -1px #66ff00,
+         1px  1px #66ff00;
+}
+
+#full h2.reactor:hover, #main h2.reactor:hover, #full #accordion h2.reactor:hover, #main h2.reactor.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #66ff00,
+        -1px  1px #66ff00,
+         1px -1px #66ff00,
+         1px  1px #66ff00;
+}
+
+#full h2.revolution, #main h2.revolution, #full #accordion h2.revolution {
+    text-shadow:
+        -1px -1px #f51a0a,
+        -1px  1px #f51a0a,
+         1px -1px #f51a0a,
+         1px  1px #f51a0a;
+}
+
+#full h2.revolution:hover, #main h2.revolution:hover, #full #accordion h2.revolution:hover, #main h2.revolution.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #f51a0a,
+        -1px  1px #f51a0a,
+         1px -1px #f51a0a,
+         1px  1px #f51a0a;
+}
+
+#full h2.smelter, #main h2.smelter, #full #accordion h2.smelter {
+    text-shadow:
+        -1px -1px #b00af5,
+        -1px  1px #b00af5,
+         1px -1px #b00af5,
+         1px  1px #b00af5;
+}
+
+#full h2.smelter:hover, #main h2.smelter:hover, #full #accordion h2.smelter:hover, #main h2.smelter.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #b00af5,
+        -1px  1px #b00af5,
+         1px -1px #b00af5,
+         1px  1px #b00af5;
+}
+
+#full h2.spark, #main h2.spark, #full #accordion h2.spark {
+    text-shadow:
+        -1px -1px #eb2d2d,
+        -1px  1px #eb2d2d,
+         1px -1px #eb2d2d,
+         1px  1px #eb2d2d;
+}
+
+#full h2.spark:hover, #main h2.spark:hover, #full #accordion h2.spark:hover, #main h2.spark.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #eb2d2d,
+        -1px  1px #eb2d2d,
+         1px -1px #eb2d2d,
+         1px  1px #eb2d2d;
+}
+
+#full h2.spectrum, #main h2.spectrum, #full #accordion h2.spectrum {
+    text-shadow:
+        -1px -1px #f5c60a,
+        -1px  1px #f5c60a,
+         1px -1px #f5c60a,
+         1px  1px #f5c60a;
+}
+
+#full h2.spectrum:hover, #main h2.spectrum:hover, #full #accordion h2.spectrum:hover, #main h2.spectrum.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #f5c60a,
+        -1px  1px #f5c60a,
+         1px -1px #f5c60a,
+         1px  1px #f5c60a;
+}
+
+#full h2.spindle, #main h2.spindle, #full #accordion h2.spindle {
+    text-shadow:
+        -1px -1px #ffe029,
+        -1px  1px #ffe029,
+         1px -1px #ffe029,
+         1px  1px #ffe029;
+}
+
+#full h2.spindle:hover, #main h2.spindle:hover, #full #accordion h2.spindle:hover, #main h2.spindle.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ffe029,
+        -1px  1px #ffe029,
+         1px -1px #ffe029,
+         1px  1px #ffe029;
+}
+
+#full h2.sprocket, #main h2.sprocket, #full #accordion h2.sprocket {
+    text-shadow:
+        -1px -1px #c88963,
+        -1px  1px #c88963,
+         1px -1px #c88963,
+         1px  1px #c88963;
+}
+
+#full h2.sprocket:hover, #main h2.sprocket:hover, #full #accordion h2.sprocket:hover, #main h2.sprocket.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #c88963,
+        -1px  1px #c88963,
+         1px -1px #c88963,
+         1px  1px #c88963;
+}
+
+#full h2.steam, #main h2.steam, #full #accordion h2.steam {
+    text-shadow:
+        -1px -1px #976e58,
+        -1px  1px #976e58,
+         1px -1px #976e58,
+         1px  1px #976e58;
+}
+
+#full h2.steam:hover, #main h2.steam:hover, #full #accordion h2.steam:hover, #main h2.steam.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #976e58,
+        -1px  1px #976e58,
+         1px -1px #976e58,
+         1px  1px #976e58;
+}
+
+#full h2.subzero, #main h2.subzero, #full #accordion h2.subzero {
+    text-shadow:
+        -1px -1px #0af5e2,
+        -1px  1px #0af5e2,
+         1px -1px #0af5e2,
+         1px  1px #0af5e2;
+}
+
+#full h2.subzero:hover, #main h2.subzero:hover, #full #accordion h2.subzero:hover, #main h2.subzero.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #0af5e2,
+        -1px  1px #0af5e2,
+         1px -1px #0af5e2,
+         1px  1px #0af5e2;
+}
+
+#full h2.titanium, #main h2.titanium, #full #accordion h2.titanium {
+    text-shadow:
+        -1px -1px #a0a0a0,
+        -1px  1px #a0a0a0,
+         1px -1px #a0a0a0,
+         1px  1px #a0a0a0;
+}
+
+#full h2.titanium:hover, #main h2.titanium:hover, #full #accordion h2.titanium:hover, #main h2.titanium.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #a0a0a0,
+        -1px  1px #a0a0a0,
+         1px -1px #a0a0a0,
+         1px  1px #a0a0a0;
+}
+
+#full h2.ultraviolet, #main h2.ultraviolet, #full #accordion h2.ultraviolet {
+    text-shadow:
+        -1px -1px #f50a9a,
+        -1px  1px #f50a9a,
+         1px -1px #f50a9a,
+         1px  1px #f50a9a;
+}
+
+#full h2.ultraviolet:hover, #main h2.ultraviolet:hover, #full #accordion h2.ultraviolet:hover, #main h2.ultraviolet.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #f50a9a,
+        -1px  1px #f50a9a,
+         1px -1px #f50a9a,
+         1px  1px #f50a9a;
+}
+
+#full h2.variable, #main h2.variable, #full #accordion h2.variable {
+    text-shadow:
+        -1px -1px #ff43c7,
+        -1px  1px #ff43c7,
+         1px -1px #ff43c7,
+         1px  1px #ff43c7;
+}
+
+#full h2.variable:hover, #main h2.variable:hover, #full #accordion h2.variable:hover, #main h2.variable.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ff43c7,
+        -1px  1px #ff43c7,
+         1px -1px #ff43c7,
+         1px  1px #ff43c7;
+}
+
+#full h2.voltage, #main h2.voltage, #full #accordion h2.voltage {
+    text-shadow:
+        -1px -1px #ff000c,
+        -1px  1px #ff000c,
+         1px -1px #ff000c,
+         1px  1px #ff000c;
+}
+
+#full h2.voltage:hover, #main h2.voltage:hover, #full #accordion h2.voltage:hover, #main h2.voltage.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #ff000c,
+        -1px  1px #ff000c,
+         1px -1px #ff000c,
+         1px  1px #ff000c;
+}
+
+#full h2.wattage, #main h2.wattage, #full #accordion h2.wattage {
+    text-shadow:
+        -1px -1px #f65835,
+        -1px  1px #f65835,
+         1px -1px #f65835,
+         1px  1px #f65835;
+}
+
+#full h2.wattage:hover, #main h2.wattage:hover, #full #accordion h2.wattage:hover, #main h2.wattage.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #f65835,
+        -1px  1px #f65835,
+         1px -1px #f65835,
+         1px  1px #f65835;
+}
+
+#full h2.apex, #main h2.apex, #full #accordion h2.apex {
+    text-shadow:
+        -1px -1px #b63526,
+        -1px  1px #b63526,
+         1px -1px #b63526,
+         1px  1px #b63526;
+}
+
+#full h2.apex:hover, #main h2.apex:hover, #full #accordion h2.apex:hover, #main h2.apex.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #b63526,
+        -1px  1px #b63526,
+         1px -1px #b63526,
+         1px  1px #b63526;
+}
+
+#full h2.bevel, #main h2.bevel, #full #accordion h2.bevel {
+    text-shadow:
+        -1px -1px #1168b2,
+        -1px  1px #1168b2,
+         1px -1px #1168b2,
+         1px  1px #1168b2;
+}
+
+#full h2.bevel:hover, #main h2.bevel:hover, #full #accordion h2.bevel:hover, #main h2.bevel.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #1168b2,
+        -1px  1px #1168b2,
+         1px -1px #1168b2,
+         1px  1px #1168b2;
+}
+
+#full h2.diffuser, #main h2.diffuser, #full #accordion h2.diffuser {
+    text-shadow:
+        -1px -1px #e24f75,
+        -1px  1px #e24f75,
+         1px -1px #e24f75,
+         1px  1px #e24f75;
+}
+
+#full h2.diffuser:hover, #main h2.diffuser:hover, #full #accordion h2.diffuser:hover, #main h2.diffuser.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #e24f75,
+        -1px  1px #e24f75,
+         1px -1px #e24f75,
+         1px  1px #e24f75;
+}
+
+#full h2.contour, #main h2.contour, #full #accordion h2.contour {
+    text-shadow:
+        -1px -1px #e86ca9,
+        -1px  1px #e86ca9,
+         1px -1px #e86ca9,
+         1px  1px #e86ca9;
+}
+
+#full h2.contour:hover, #main h2.contour:hover, #full #accordion h2.contour:hover, #main h2.contour.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #e86ca9,
+        -1px  1px #e86ca9,
+         1px -1px #e86ca9,
+         1px  1px #e86ca9;
+}
+
+#full h2.frigid, #main h2.frigid, #full #accordion h2.frigid {
+    text-shadow:
+        -1px -1px #0bae5f,
+        -1px  1px #0bae5f,
+         1px -1px #0bae5f,
+         1px  1px #0bae5f;
+}
+
+#full h2.frigid:hover, #main h2.frigid:hover, #full #accordion h2.frigid:hover, #main h2.frigid.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #0bae5f,
+        -1px  1px #0bae5f,
+         1px -1px #0bae5f,
+         1px  1px #0bae5f;
+}
+
+#full h2.gauge, #main h2.gauge, #full #accordion h2.gauge {
+    text-shadow:
+        -1px -1px #864c9e,
+        -1px  1px #864c9e,
+         1px -1px #864c9e,
+         1px  1px #864c9e;
+}
+
+#full h2.gauge:hover, #main h2.gauge:hover, #full #accordion h2.gauge:hover, #main h2.gauge.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #864c9e,
+        -1px  1px #864c9e,
+         1px -1px #864c9e,
+         1px  1px #864c9e;
+}
+
+#full h2.copper, #main h2.copper, #full #accordion h2.copper {
+    text-shadow:
+        -1px -1px #c94927,
+        -1px  1px #c94927,
+         1px -1px #c94927,
+         1px  1px #c94927;
+}
+
+#full h2.copper:hover, #main h2.copper:hover, #full #accordion h2.copper:hover, #main h2.copper.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #c94927,
+        -1px  1px #c94927,
+         1px -1px #c94927,
+         1px  1px #c94927;
+}
+
+#full h2.digital, #main h2.digital, #full #accordion h2.digital {
+    text-shadow:
+        -1px -1px #f78d1e,
+        -1px  1px #f78d1e,
+         1px -1px #f78d1e,
+         1px  1px #f78d1e;
+}
+
+#full h2.digital:hover, #main h2.digital:hover, #full #accordion h2.digital:hover, #main h2.digital.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #f78d1e,
+        -1px  1px #f78d1e,
+         1px -1px #f78d1e,
+         1px  1px #f78d1e;
+}
+
+#full h2.analog, #main h2.analog, #full #accordion h2.analog {
+    text-shadow:
+        -1px -1px #f26722,
+        -1px  1px #f26722,
+         1px -1px #f26722,
+         1px  1px #f26722;
+}
+
+#full h2.analog:hover, #main h2.analog:hover, #full #accordion h2.analog:hover, #main h2.analog.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #f26722,
+        -1px  1px #f26722,
+         1px -1px #f26722,
+         1px  1px #f26722;
+}
+
+#full h2.frequency, #main h2.frequency, #full #accordion h2.frequency {
+    text-shadow:
+        -1px -1px #b61e40,
+        -1px  1px #b61e40,
+         1px -1px #b61e40,
+         1px  1px #b61e40;
+}
+
+#full h2.frequency:hover, #main h2.frequency:hover, #full #accordion h2.frequency:hover, #main h2.frequency.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #b61e40,
+        -1px  1px #b61e40,
+         1px -1px #b61e40,
+         1px  1px #b61e40;
+}
+
+#full h2.breaker, #main h2.breaker, #full #accordion h2.breaker {
+    text-shadow:
+        -1px -1px #c9212a,
+        -1px  1px #c9212a,
+         1px -1px #c9212a,
+         1px  1px #c9212a;
+}
+
+#full h2.breaker:hover, #main h2.breaker:hover, #full #accordion h2.breaker:hover, #main h2.breaker.click {
+    text-shadow:
+        0 0 0.5em #ffffbe,
+
+        -1px -1px #c9212a,
+        -1px  1px #c9212a,
+         1px -1px #c9212a,
+         1px  1px #c9212a;
+}
+
+aside.juicy {
+    min-height: 500px;
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 7em;
+}
+
+aside.juicy div {
+    display: none;
+}
+
+aside.juicy div img {
+    width: 100%;
+    border: solid 2px #E57B25;
+    border-radius: 10px;
+}
