@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+</head>
+
+<style type="text/css">
+
+@font-face {
+    font-family: 'Live Wired';
+    src: url('../fonts/livewiredital.ttf') format('truetype'),
+         url('../fonts/livewiredital-webfont.woff') format('woff'),
+         url('../fonts/livewiredital-webfont.woff2') format('woff2'),
+         url('../fonts/livewiredital-webfont.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Bernard';
+    src: url('../fonts/bernard.ttf') format('truetype'),
+         url('../fonts/bernard-webfont.woff') format('woff'),
+         url('../fonts/bernard-webfont.woff2') format('woff2'),
+         url('../fonts/bernard-webfont.eot') format('embedded-opentype');
+}
+
+#modalContainer {
+	background-color:rgba(0, 0, 0, 0.3);
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:10000;
+	background-image:url(tp.png); /* required by MSIE to prevent actions on lower z-index elements */
+}
+
+#alertBox {
+	position:relative;
+	width:500px;
+	min-height:100px;
+	margin-top:50px;
+	border:2px solid #E57B25;
+	background-color:#5F5D5D;
+	background-repeat:no-repeat;
+	background-position:20px 30px;
+    border-radius: 20px;
+}
+
+#modalContainer > #alertBox {
+	position:fixed;
+}
+
+#alertBox h1 {
+	margin:0;
+	height: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #5F5D5D,
+         1px -1px 0 #5F5D5D,
+        -1px  1px 0 #5F5D5D,
+         1px  1px 0 #5F5D5D;
+	background-color: #3D3B3B;
+	border-bottom:2px solid #E57B25;
+	padding:2px 0 2px 5px;
+    border-radius: 20px 20px 0 0;
+}
+
+#alertBox p {
+	font: 0.7em Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+	padding:10px 5px;
+	margin:0 10px;
+}
+
+#alertBox #closeBtn, #alertBox #puntBtn {
+	display:block;
+	position:relative;
+	margin:10px;
+	padding:7px;
+	border:0 none;
+	width:200px;
+	font-size: 1.2em;
+    line-height: 1em;
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #5F5D5D,
+         1px -1px 0 #5F5D5D,
+        -1px  1px 0 #5F5D5D,
+         1px  1px 0 #5F5D5D;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#E57B25;
+	border-radius: 3px;
+	text-decoration:none;
+}
+
+#alertBox #closeBtn {
+    float: left;
+}
+
+#alertBox #puntBtn {
+    float: right;
+}
+
+</style>
+
+<script type="text/javascript">
+var ALERT_TITLE = "MUST BE OF LEGAL AGE TO ENTER";
+var ALERT_BUTTON_TEXT = "Yes I am over 18.";
+var PUNT_BUTTON_TEXT = "No I am under 18.";
+var ALERT_TEXT = "WARNING: E-liquid products may contain nicotine, which is poisonous and addictive. These products are intended only for adults of legal smoking age who are committed smokers and is not intended for use by women who are pregnant, may become pregnant, children, or anyone with a pre-existing medical condition without first consulting your physician. If you do experience any side effects stop using our products immediately and consult your physician. Our pruducts are not made for ingestion. Our products have not been evaluated by the food and drug administration and they are not intended to cure, treat, or prevent any disease or condition.  For safety, please keep all of our products out of reach of childreen and pets. Use as directed.";
+
+if(document.getElementById) {
+	window.alert = function(txt) {
+		createCustomAlert(txt);
+	}
+}
+
+function createCustomAlert(txt) {
+	d = document;
+
+	if(d.getElementById("modalContainer")) return;
+
+	mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+	mObj.id = "modalContainer";
+	mObj.style.height = d.documentElement.scrollHeight + "px";
+
+	alertObj = mObj.appendChild(d.createElement("div"));
+	alertObj.id = "alertBox";
+	if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+	alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+	alertObj.style.visiblity="visible";
+
+	h1 = alertObj.appendChild(d.createElement("h1"));
+	h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+	msg = alertObj.appendChild(d.createElement("p"));
+	msg.innerHTML = txt;
+
+	btn = alertObj.appendChild(d.createElement("a"));
+	btn.id = "closeBtn";
+	btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+	btn.href = "#";
+	btn.focus();
+	btn.onclick = function() { removeCustomAlert();return false; }
+
+    btn2 = alertObj.appendChild(d.createElement("a"));
+	btn2.id = "puntBtn";
+	btn2.appendChild(d.createTextNode(PUNT_BUTTON_TEXT));
+	btn2.href = "punt.htm";
+	btn2.focus();
+
+
+	alertObj.style.display = "block";
+
+}
+
+function removeCustomAlert() {
+	document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+}
+function ful(){
+alert(ALERT_TEXT);
+}
+</script>
+
+<body>
+<input type="button" value = "Test the alert" onclick="alert(ALERT_TEXT);" />
+</body>
+
+</html>

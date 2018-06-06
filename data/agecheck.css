@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: 'Live Wired';
+    src: url('../fonts/livewiredital.ttf') format('truetype'),
+         url('../fonts/livewiredital-webfont.woff') format('woff'),
+         url('../fonts/livewiredital-webfont.woff2') format('woff2'),
+         url('../fonts/livewiredital-webfont.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Bernard';
+    src: url('../fonts/bernard.ttf') format('truetype'),
+         url('../fonts/bernard-webfont.woff') format('woff'),
+         url('../fonts/bernard-webfont.woff2') format('woff2'),
+         url('../fonts/bernard-webfont.eot') format('embedded-opentype');
+}
+
+#modalContainer {
+	background-color:rgba(0, 0, 0, 0.7);
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:10000;
+	background-image:url(tp.png); /* required by MSIE to prevent actions on lower z-index elements */
+}
+
+#alertBox {
+	position:relative;
+	width:90%;
+    max-width: 500px;
+	min-height:100px;
+	margin-top:50px;
+	border:2px solid #E57B25;
+	background-color:#B3B3B3;
+	background-repeat:no-repeat;
+	background-position:20px 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#modalContainer > #alertBox {
+	position:fixed;
+}
+
+#alertBox h1 {
+	margin:0;
+    font-size: 1.4em;
+    line-height: 1em;
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #E57B25,
+     1px -1px 0 #E57B25,
+    -1px  1px 0 #E57B25,
+     1px  1px 0 #E57B25;
+	background-color: #3D3B3B;
+	border-bottom:2px solid #E57B25;
+	padding:2px 0 2px 5px;
+}
+
+#alertBox p {
+	font: 0.7em Arial, Helvetica, sans-serif;
+    color: #000000;
+	padding:10px 5px;
+	margin:0 10px;
+}
+
+#alertBox #closeBtn, #alertBox #puntBtn {
+	display:block;
+	position:relative;
+	margin:5%;
+	padding:7px;
+	border:0 none;
+	width:40%;
+	font-size: 1.2em;
+    line-height: 1em;
+    font-family: Live Wired;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #E57B25,
+     1px -1px 0 #E57B25,
+    -1px  1px 0 #E57B25,
+     1px  1px 0 #E57B25,
+
+    -1px -1px 0 #E57B25,
+     1px -1px 0 #E57B25,
+    -1px  1px 0 #E57B25,
+     1px  1px 0 #E57B25,
+
+    -2px -2px 0 #3D3B3B,
+     2px -2px 0 #3D3B3B,
+    -2px  2px 0 #3D3B3B,
+     2px  2px 0 #3D3B3B,
+
+    -2px -1px 0 #3D3B3B,
+     2px -1px 0 #3D3B3B,
+    -2px  1px 0 #3D3B3B,
+     2px  1px 0 #3D3B3B,
+
+    -1px -2px 0 #3D3B3B,
+     1px -2px 0 #3D3B3B,
+    -1px  2px 0 #3D3B3B,
+     1px  2px 0 #3D3B3B;
+	text-align:center;
+	color:#FFFFFF;
+    background-color:#E57B25;
+	border-radius: 3px;
+	text-decoration:none;
+}
+
+#alertBox #closeBtn {
+    float: left;
+}
+
+#alertBox #puntBtn {
+    float: right;
+}

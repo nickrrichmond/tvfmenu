@@ -1,0 +1,26 @@
+.ui-icon {
+    background-image: url("images/ui-icons_ef8c08_256x240.png");
+    left: -0.2em;
+}
+
+.ui-accordion-header.ui-state-hover, .ui-accordion-header.ui-state-focus {
+    background: #f58400 url("images/ui-bg_inset-soft_30_f58400_1x100.png");
+    border:1px solid #ffaf0f;
+}
+
+.ui-accordion-content {
+    background: rgb(61, 59, 59);
+}
+
+#full #accordion .ui-accordion-content {
+    padding: 5px;
+    margin: 0;
+}
+
+.ui-accordion-header {
+    line-height: 0.75em;
+}
+
+#accordion {
+    margin-top: 10px;
+}
